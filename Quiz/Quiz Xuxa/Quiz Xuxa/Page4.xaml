@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Xuxa.Page4" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#14145f">
+            <Label Margin="0, 20" Text="⚡ Genio Quiz ⚡" HorizontalOptions="Center" TextColor="White" FontSize="30" />
+
+            <Label x:Name="txtPontuacao" Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="30" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

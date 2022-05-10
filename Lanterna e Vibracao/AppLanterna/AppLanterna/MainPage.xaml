@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLanterna.MainPage">
+
+    <StackLayout>
+        <Label Text="Lanterna" FontSize="30" HorizontalOptions="Center" Margin="0,40,0,0" TextColor="Black" FontAttributes ="Bold" />
+        <Button
+                Text="Ligar"
+                x:Name="btnLigarLanterna"
+                Background="Blue" 
+                TextColor="White"
+                VerticalOptions="Center"
+                CornerRadius="20"
+            Margin="20,40,20,20"
+                Clicked="onButtonOnnClicked"
+            />
+        <Button
+                Text="Desligar"
+                x:Name="btnDesligarLanterna"
+                Background="Blue" 
+                TextColor="White"
+                VerticalOptions="Center"
+                CornerRadius="20"
+            Margin="20,0,20,20"
+                Clicked="onButtonOffClicked"
+            />
+        
+        <Switch x:Name="swtLanterna" 
+                IsToggled="True"
+                Toggled="SwtToggledLanterna"
+                HorizontalOptions="Center"
+                Margin="40,40,40,60"/>
+
+        <Label Text="Vibração" FontSize="30" HorizontalOptions="Center" Margin="0,40,0,0" TextColor="Black" FontAttributes="Bold" />
+
+        <Button
+                Text="Ligar"
+                x:Name="btnLigarVibracao"
+                Background="Blue" 
+                TextColor="White"
+                VerticalOptions="Center"
+                CornerRadius="20"
+            Margin="20,40,20,20"
+                Clicked="onButtonOnnClickedvibracao"
+            />
+       
+
+        <Switch x:Name="swtVibracao" 
+                IsToggled="False"
+                Toggled="onSwtToggled" 
+                HorizontalOptions="Center"
+                Margin="40,40,40,60"/>
+
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_Xuxa.Page1" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#14145f">
+            <Label Margin="0, 20" Text="⚡ Genio Quiz ⚡" HorizontalOptions="Center" TextColor="White" FontSize="30" />
+            
+            <Frame Padding="0, 80" BackgroundColor="#141439"  Margin=" 30" CornerRadius=" 20">
+                <Label Text="Programação:
+                       
+                       O que significa a sigla O.R.M.?"
+                       TextColor="White" FontSize="26"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       Margin="10, 0"/>
+            </Frame>
+
+
+            <Button Margin="50, 0"
+                    CornerRadius="10" 
+                    BackgroundColor="Transparent"
+                    BorderColor="#B208CA"
+                    TextColor="#B208CA"
+                    FontSize="25" 
+                    Text="Responder"
+                    Clicked="onResponderClicked"
+                    />
+
+            <Button
+                Margin="50, 0"
+                    CornerRadius="10" 
+                    BackgroundColor="Transparent"
+                    BorderColor="White"
+                    TextColor="White"
+                    FontSize="25" 
+                    Text="Desistir"
+                    Clicked="onDesistirClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

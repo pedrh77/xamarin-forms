@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BradescoApp.MainPage">
+
+
+    <StackLayout BackgroundColor="#10101f"  >
+        <Image  Source="Logo.png"    
+        WidthRequest="200" 
+        VerticalOptions="Center" 
+        HorizontalOptions="CenterAndExpand" 
+        Margin="0,50,0,30" />
+
+        <Label Text=" Hello." Margin="0,50,0,0" 
+        FontSize="40" TextColor="#FFf"
+        Padding="0"/>
+        <Label Text=" Welcome Back." 
+        FontSize="25"  TextColor="#FFf"
+        FontAttributes="Bold"/>
+
+        <Entry Placeholder="Digite seu CPF/Cnpj" x:Name="Cpf" Margin="25,40,100,10" />
+        <Entry Placeholder="Digite sua Senha" x:Name="Senha" Margin="25,0,100,10" />
+
+        <FlexLayout Direction="Row" JustifyContent="Center">
+            <Button Text="Login" FontSize="17" BackgroundColor="Transparent" WidthRequest="100" CornerRadius="4" HorizontalOptions="Center" BorderColor="MediumPurple" TextColor="MediumPurple" Clicked="onLoginClick"/>
+            <Button Text="Registrar" FontSize="17" BackgroundColor="Transparent" HorizontalOptions="Center" CornerRadius="4" BorderColor="#cc0099" TextColor="#cc0099" Margin="10,0,0,0" Clicked="onRegisterClick"/>
+        </FlexLayout>
+
+
+        <Label Text="Esqueci minha senha" TextColor="#33ccff" HorizontalOptions="Center"  Margin="0,15,0,0"/>
+
+    </StackLayout>
+
+
+</ContentPage>
