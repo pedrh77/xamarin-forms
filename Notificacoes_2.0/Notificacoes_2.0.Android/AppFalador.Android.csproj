@@ -87,9 +87,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Notificacoes_2.0\Notificacoes_2.0.csproj">
-      <Project>{C7F1DFA8-6B46-4D43-9C64-53E4439B50AE}</Project>
-      <Name>Notificacoes_2.0</Name>
+    <ProjectReference Include="..\Notificacoes_2.0\AppFalador.csproj">
+      <Project>{D0ACCD7C-7940-4BCB-9BC0-1E6F9C58EF11}</Project>
+      <Name>AppFalador</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

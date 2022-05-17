@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notificacoes_2.0.Android", "Notificacoes_2.0.Android\Notificacoes_2.0.Android.csproj", "{A9CBAFA5-E419-406F-BF23-D83F995548D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFalador.Android", "Notificacoes_2.0.Android\AppFalador.Android.csproj", "{A9CBAFA5-E419-406F-BF23-D83F995548D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notificacoes_2.0", "Notificacoes_2.0\Notificacoes_2.0.csproj", "{D0ACCD7C-7940-4BCB-9BC0-1E6F9C58EF11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppFalador", "Notificacoes_2.0\AppFalador.csproj", "{D0ACCD7C-7940-4BCB-9BC0-1E6F9C58EF11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
