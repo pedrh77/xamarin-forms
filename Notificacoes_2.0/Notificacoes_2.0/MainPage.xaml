@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notificacoes_2._0.MainPage">
+
+    <StackLayout  BackgroundColor="#020d4d">
+        <Label Text="Aplicativo Falador" 
+               TextColor="#e1e8f0" 
+               FontSize="25" 
+               HorizontalOptions="Center"
+               VerticalOptions="Start" 
+               Margin="0,50,0,0"/>
+
+        <Entry x:Name="Falar"
+               Text="" 
+               BackgroundColor="#9f376c" 
+               TextColor="#e1e8f0"
+               Margin="5,40,10,15" Placeholder="Digite algo que gostaria de ouvir"/>
+        <Button 
+                Clicked="OnBtn_Falar"
+                HorizontalOptions="Center"
+                Text="Fale" 
+                BackgroundColor="#b64072" 
+                TextColor="#e1e8f0" 
+                FontSize="20" 
+                CornerRadius="20"/>
+
+        <Label Text="Tom de Voz: 0.5"  FontSize="15"  x:Name="lblTom" TextColor="#e1e8f0" /> 
+        <Slider Minimum="0" 
+                Maximum="1" 
+                Value="0.5" 
+                x:Name="Tom"
+                ThumbColor="#c8ffff" 
+                ValueChanged="onTomChange" 
+                HorizontalOptions="FillAndExpand" 
+                MinimumTrackColor="#18eed2" 
+                MaximumTrackColor="#1b547f" 
+                Margin="0,0,0,15"/>
+
+        <Label Text="Volume da Voz: 0.5"  FontSize="15" x:Name="lblvolume" TextColor="#e1e8f0" />
+        <Slider Minimum="0" 
+                Maximum="1" 
+                Value="0.5" 
+                x:Name="Volume"
+                ThumbColor="#c8ffff" 
+                ValueChanged="onVolumeChange" 
+                HorizontalOptions="FillAndExpand" 
+                MinimumTrackColor="#18eed2" 
+                MaximumTrackColor="#1b547f" 
+                Margin="0,0,0,0"/>
+        
+        <Label Text="Desenvolvido por Pedro" 
+               TextColor="#e1e8f0" 
+               FontSize="25" 
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand" 
+               Margin="0,0,0,30"/>
+    </StackLayout>
+
+</ContentPage>
