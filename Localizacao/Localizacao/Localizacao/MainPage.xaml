@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Localizacao.MainPage" NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <Label Text="Geolocalização com Aplicativos Android"
+               VerticalOptions="Center" 
+               FontSize="16" 
+               HorizontalOptions="Center"
+               Padding="100,10,100,10" 
+               TextColor="#fff" 
+               FontAttributes ="Bold"
+               HorizontalTextAlignment="Center" 
+               BackgroundColor="#1c1c1c"/>
+
+        <Entry x:Name="txtEndereco" Placeholder="Digite um Local" HorizontalTextAlignment="Center"/>
+
+        <Label FontSize="17" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontAttributes ="Bold"
+               HorizontalTextAlignment="Center" 
+               TextColor="#1c1c1c"
+               Margin="0,5,0,0"
+               x:Name="lblLong" 
+               Text="Longitude:"
+            />
+
+        <Label FontSize="17" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontAttributes ="Bold"
+               HorizontalTextAlignment="Center" 
+               TextColor="#1c1c1c"
+               x:Name="lblLat" 
+               Text="Latitude:"
+            />
+
+
+        <Label FontSize="17" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontAttributes ="Bold"
+               HorizontalTextAlignment="Center" 
+               TextColor="#1c1c1c"
+               x:Name="lblAlt" 
+               Text="Altitude:"
+            />
+        <Button
+            Margin="40,0"
+            BackgroundColor="#1c1c1c"
+            CornerRadius="10" 
+            TextColor="#fff"
+            FontSize="15" 
+            x:Name="btnObterCoord"
+            Text="Localização Atual"
+            Clicked="OnObterCoord_Clicked"
+        />
+        <Button
+            Margin="40,0"
+            BackgroundColor="#1c1c1c"
+            CornerRadius="10" 
+            TextColor="#fff"
+            FontSize="15" 
+            x:Name="btnExibirMapa"
+            Text="Exibir Local Atual no Mapa"
+            Clicked="OnExibirMapa_Clicked"
+            />
+        <FlexLayout HorizontalOptions="Center">
+        <Line 
+            X1="320"
+            Y1="0"
+            X2="0"
+            Y2="0"
+            Stroke="#1c1c1c"  
+            Margin="10"
+            />
+        </FlexLayout>
+
+        <Button 
+            Margin="40,0"
+            BackgroundColor="#1c1c1c"
+            CornerRadius="10" 
+            TextColor="#fff"
+            FontSize="15" 
+            x:Name="btnEndereco" 
+            Text="Coordenadas do local"
+            Clicked="OnMostrarCoord_Clicked"
+            />
+
+        <Button 
+            Margin="40,0"
+            BackgroundColor="#1c1c1c"
+            CornerRadius="10" 
+            TextColor="#fff"
+            FontSize="15" 
+            x:Name="btnLocal" Text="Mostrar Endereço no Mapa"
+            Clicked="OnMostrarMapaEndereco_Clicked"/>
+
+        <FlexLayout HorizontalOptions="Center">
+            <Line 
+            X1="320"
+            Y1="0"
+            X2="0"
+            Y2="0"
+            Stroke="#1c1c1c"  
+            Margin="20"
+            />
+        </FlexLayout>
+
+    </StackLayout>
+
+</ContentPage>
