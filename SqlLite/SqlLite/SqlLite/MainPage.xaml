@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqlLite.MainPage">
+
+    <StackLayout BackgroundColor="#babaca" >
+        <StackLayout x:Name="pnlDados">
+            <Image  Source="https://icons-for-free.com/download-icon-sqlite-1324440236196718360_512.png"    
+        WidthRequest="120" 
+                    HeightRequest="130"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Entry x:Name="txtContatoId" IsEnabled="False"/>
+        <Entry x:Name="txtNome" Placeholder="Entre com o Nome"/>
+        <Entry x:Name="txtCelular" Placeholder="Entre com o Nº do Celular" Keyboard="Telephone"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Button x:Name="btnNovo" WidthRequest="100" Text="Novo" Clicked="BtnNovo_Clicked" CornerRadius="10" />
+            <Button x:Name="btnEditar" WidthRequest="100" Text="Editar" Clicked="BtnEditar_Clicked" CornerRadius="10" />
+            <Button x:Name="btnCancelar" WidthRequest="140" Text="Cancelar" Clicked="BtnCancelar_Clicked" CornerRadius="10" />
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button x:Name="btnUpdate" WidthRequest="120" Text="Salvar" Clicked="BtnUpdate_Clicked" CornerRadius="10"/>
+            <Button x:Name="btnDelete" WidthRequest="120" Text="Excluir" Clicked="BtnDelete_Clicked" CornerRadius="10" />
+        </StackLayout>
+        
+        <SearchBar x:Name="txtPesquisar" TextChanged="OnPesquisar" />
+       
+
+        <ListView x:Name="lstDados" ItemSelected="lstDados_ItemSelected" VerticalScrollBarVisibility="Always">
+           
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" Detail="{Binding ContatoID}">
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+
+  
+
+</ContentPage>
